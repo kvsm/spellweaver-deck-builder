@@ -5,11 +5,17 @@ import styled from 'styled-components'
 import Card from './Card'
 
 const Container = styled.div`
-  padding: 0 180px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
   max-width: 1610px;
   margin-left: auto;
   margin-right: auto;
   transition: opacity 1s linear, transform 2s ease-in-out;
+  overflow: hidden;
+  border: 3px solid red;
+  flex: 1;
+  height: 0px;
 `
 
 const Title = styled.h1`
@@ -17,12 +23,18 @@ const Title = styled.h1`
   font-weight: 400;
   font-family: 'Suranna', serif;
   text-align: center;
+  margin: 0;
 `
 
 const CardList = styled.div`
   display: flex;
   flex-wrap: wrap;
   perspective: 1050px;
+  padding: 1em 10% 0;
+  overflow-y: scroll;
+  border: 3px solid greenyellow;
+  height: 0px;
+  flex: 1;
 `
 const CardWrapper = styled.div`
   flex: 1;

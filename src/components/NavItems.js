@@ -6,6 +6,7 @@ const Container = styled.div`
   justify-content: flex-end;
   align-items: center;
   flex: 1;
+  border: 3px solid firebrick;
 `
 
 const Item = styled.span`

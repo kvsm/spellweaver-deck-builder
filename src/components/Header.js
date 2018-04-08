@@ -5,11 +5,9 @@ import NavItems from './NavItems'
 
 const Container = styled.div`
   display: flex;
-  justify-content: center;
   padding: 3.125rem 180px 0;
   max-width: 1610px;
-  margin-left: auto;
-  margin-right: auto;
+  flex: 0 0 auto;
 `
 
 const Title = styled.h1`
@@ -19,7 +17,7 @@ const Title = styled.h1`
   font-weight: 400;
   letter-spacing: 0.05em;
   text-transform: lowercase;
-  flex: 1;
+  border: 3px solid aquamarine;
 `
 
 class Header extends Component {
